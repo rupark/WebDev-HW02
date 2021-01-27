@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<!--
+Assumptions:
+- As per http://www.ccs.neu.edu/home/ntuck/courses/2019/01/cs4550/calc/, calculator can only show one number at a time
+- Hitting the plus sign after getting a result doubles the result, since I've seen some calculators do that
+ -->
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calc.css">
+  </head>
+  <body>
+    <table>
+      <tr>
+        <td id="display" colspan="4"></td>
+      </tr>
+      <tr>
+        <td><button type="button" name="7" onclick="key_pressed(7)">7</button></td>
+        <td><button type="button" name="8" onclick="key_pressed(8)">8</button></td>
+        <td><button type="button" name="9" onclick="key_pressed(9)">9</button></td>
+        <td><button type="button" name="+=" onclick="equals()">+=</button></td>
+      </tr>
+      <tr>
+        <td><button type="button" name="4" onclick="key_pressed(4)">4</button></td>
+        <td><button type="button" name="5" onclick="key_pressed(5)">5</button></td>
+        <td><button type="button" name="6" onclick="key_pressed(6)">6</button></td>
+        <td><button type="button" name="-" onclick="set_mode('sub')">-</button></td>
+      </tr>
+      <tr>
+        <td><button type="button" name="1" onclick="key_pressed(1)">1</button></td>
+        <td><button type="button" name="2" onclick="key_pressed(2)">2</button></td>
+        <td><button type="button" name="3" onclick="key_pressed(3)">3</button></td>
+        <td><button type="button" name="*" onclick="set_mode('mult')">*</button></td>
+      </tr>
+      <tr>
+        <td><button type="button" name="C" onclick="cleardis()">C</button></td>
+        <td><button type="button" name="0" onclick="key_pressed(0)">0</button></td>
+        <td><button type="button" name="." onclick="decimal()">.</button></td>
+        <td><button type="button" name="/" onclick="set_mode('div')"">/</button></td>
+      </tr>
+    </table>
+  </body>
+
+    <script src="calc.js"></script>
+
+</html>
