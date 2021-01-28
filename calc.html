@@ -11,7 +11,7 @@ Assumptions:
     <meta charset="utf-8">
     <title>Calculator</title>
     <link rel="stylesheet" href="calc.css">
-    <script src="calc.js"></script>
+
   </head>
   <body>
     <table>
@@ -19,30 +19,31 @@ Assumptions:
         <td id="display" colspan="4"></td>
       </tr>
       <tr>
-        <td><button type="button" name="7" onclick="key_pressed(7)">7</button></td>
-        <td><button type="button" name="8" onclick="key_pressed(8)">8</button></td>
-        <td><button type="button" name="9" onclick="key_pressed(9)">9</button></td>
-        <td><button type="button" name="+=" onclick="equals()">+=</button></td>
+        <td><button type="button" id="7">7</button></td>
+        <td><button type="button" id="8">8</button></td>
+        <td><button type="button" id="9">9</button></td>
+        <td><button type="button" id="+=">+=</button></td>
       </tr>
       <tr>
-        <td><button type="button" name="4" onclick="key_pressed(4)">4</button></td>
-        <td><button type="button" name="5" onclick="key_pressed(5)">5</button></td>
-        <td><button type="button" name="6" onclick="key_pressed(6)">6</button></td>
-        <td><button type="button" name="-" onclick="set_mode('sub')">-</button></td>
+        <td><button type="button" id="4">4</button></td>
+        <td><button type="button" id="5">5</button></td>
+        <td><button type="button" id="6">6</button></td>
+        <td><button type="button" id="-">-</button></td>
       </tr>
       <tr>
-        <td><button type="button" name="1" onclick="key_pressed(1)">1</button></td>
-        <td><button type="button" name="2" onclick="key_pressed(2)">2</button></td>
-        <td><button type="button" name="3" onclick="key_pressed(3)">3</button></td>
-        <td><button type="button" name="*" onclick="set_mode('mult')">*</button></td>
+        <td><button type="button" id="1">1</button></td>
+        <td><button type="button" id="2">2</button></td>
+        <td><button type="button" id="3">3</button></td>
+        <td><button type="button" id="*">*</button></td>
       </tr>
       <tr>
-        <td><button type="button" name="C" onclick="cleardis()">C</button></td>
-        <td><button type="button" name="0" onclick="key_pressed(0)">0</button></td>
-        <td><button type="button" name="." onclick="decimal()">.</button></td>
-        <td><button type="button" name="/" onclick="set_mode('div')">/</button></td>
+        <td><button type="button" id="C">C</button></td>
+        <td><button type="button" id="0">0</button></td>
+        <td><button type="button" id=".">.</button></td>
+        <td><button type="button" id="/">/</button></td>
       </tr>
     </table>
+    <script src="calc.js"></script>
   </body>
 
 
